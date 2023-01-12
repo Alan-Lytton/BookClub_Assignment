@@ -28,9 +28,13 @@
         <p class="border border-2 border-dark border-start-0 border-end-0 w-25 p-3"><c:out value="${book.thoughts}"/></p>
     </div>
     <span class="d-flex"><c:if test="${id == book.user.id}"><a href="/books/edit/${book.id}" class="btn btn-primary align-self-start me-1">Edit</a>
-        <form:form action="/books/${book.id}" method="delete">
+        <form action="/books/${book.id}/delete" method="post">
+            <input type="hidden" name="_method" value="delete">
             <input type="submit" value="Delete" class="btn btn-danger ms-1">
-        </form:form> </c:if></span>
+        </form></c:if></span>
+
+    <input type="hidden" name="_method" value="delete">
+
 </div>
 
     <script src="/webjars/jquery/jquery.min.js"></script>

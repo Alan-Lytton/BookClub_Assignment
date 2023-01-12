@@ -122,7 +122,7 @@ public class HomeController {
         return "redirect:/home";
     }
 
-    @DeleteMapping("/books/{id}")
+    @DeleteMapping("/books/{id}/delete")
     public String deleteBook(@PathVariable("id")Long id){
         bookServ.deleteBook(id);
         return "redirect:/home";
