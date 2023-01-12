@@ -32,9 +32,6 @@
             <input type="hidden" name="_method" value="delete">
             <input type="submit" value="Delete" class="btn btn-danger ms-1">
         </form></c:if></span>
-
-    <input type="hidden" name="_method" value="delete">
-
 </div>
 
     <script src="/webjars/jquery/jquery.min.js"></script>
